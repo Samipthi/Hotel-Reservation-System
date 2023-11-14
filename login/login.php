@@ -24,6 +24,30 @@ if (isset($_SESSION["user"])) {
 </head>
 
  <body>
+ <div class="container">
+        <?php
+        if (isset($_POST["submit"])) {
+           $username = $_POST["username"];
+           $password = $_POST["password"];
+         require_once("database.php");
+
+            $sql = "SELECT * FROM user WHERE username = '$username'";
+            $result = mysqli_query($conn, $sql);
+            $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
+            if ($user) {
+                if (password_verify($password, $user["password"])) {
+                    session_start();
+                    $_SESSION["user"] = "yes";
+                    header("Location: index.php");
+                    die();
+                }else{
+                    echo "<div class='alert alert-danger'>Password does not match</div>";
+                }
+            }else{
+                echo "<div class='alert alert-danger'>Username does not match</div>";
+            }
+        }
+        ?>
 
 <div class="wrapper"> <!-- wrappers both login and registration together-->
    <!--login-->
@@ -33,7 +57,7 @@ if (isset($_SESSION["user"])) {
     <h1>Login</h1>
     
     <div class="input-box">
-    <input type="text" placeholder="Username" class="form-control" name="fullname" required>   
+    <input type="text" placeholder="Username" class="form-control" name="username" required>   
     <i class='bx bxs-user'></i>
     </div>
     
@@ -48,44 +72,12 @@ if (isset($_SESSION["user"])) {
 </div>
 
 <button type="submit" class="btn" value="Register" name="submit">Login</button>
-<div class="register-link">
-    <p>Don't have an account?<a href="#" class="registerbtn_link">Register</a></p>
+<div class="registerb">
+    <p>Don't have an account?<a href="registration.php" class="register">Register</a></p>
 </div>   
 
  </form>
  </div> 
- 
- <!--registration-->
- <div class="form-wrapper register">
-    <form action="registration.php" method="post">
-    
-    <h1>Register</h1>
-    
-    <div class="input-box">
-    <input type="text" placeholder="Username" class="form-control" name="fullname" required>   
-    <i class='bx bxs-user'></i>
-    </div >
-
-    <div class="input-box">
-    <input type="text" class="form-control" name="email" placeholder="Email" required>
-    <i class='bx bx-envelope'></i>
-    </div>
-
-    <div class="input-box">
-    <input type="password" class="form-control" name="password" placeholder="Password" required>
-    <i class='bx bx-lock-alt'></i>
-    </div>
-
- 
-<button type="submit" class="btn" value="Register" name="submit">Register</button>
-<div class="login-link">
-    <p>Have an account?<a href="#" class="loginbtn_link">Login</a></p>
-</div> 
-
- </form>
- 
- </div>  
-
  </div>
 
  <!--javasrcipt file-->
