@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home-page.css">
+    <link rel="stylesheet" href="r.css">
+    <title>Award-Winning Hotel</title>
+</head>
+<body>
+
+<div class="navbar-container">
+    <div class="navbar-navbar">
+        <div class="navbar-logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="navbar-links">
+            <span class="navbar-text"><a href="homepage.php">Home</a></span>
+            <span class="navbar-text"><span>Explore</span></span>
+            <span class="navbar-text"><a href="r.html">Rooms</a></span>
+            <span class="navbar-text"><span>About</span></span>
+            <span class="navbar-text"><span>Contact</span></span>
+        </div>
+        <div class="navbar-btn">
+            <span class="navbar-text"><a href="login.php">Login</a></span>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <header>
+        <h1>PARADISE</h1>
+    </header>
+
+    <section class="room-container" id="singleRoom">
+        <img src="single-room.jpg" alt="Single Room Image">
+        <div class="details">
+            <h2>Single Room</h2>
+            <button onclick="checkAvailability('single')">Check Availability</button>
+            <p class="availabilityResult" id="availabilityResultSingle"></p>
+            <p class="room-price" id="roomPriceSingle">Select room type to see the price.</p>
+        </div>
+    </section>
+
+    <section class="room-container" id="doubleRoom">
+        <img src="double-room.jpg" alt="Double Room Image">
+        <div class="details">
+            <h2>Double Room</h2>
+            <button onclick="checkAvailability('double')">Check Availability</button>
+            <p class="availabilityResult" id="availabilityResultDouble"></p>
+            <p class="room-price" id="roomPriceDouble">Select room type to see the price.</p>
+        </div>
+    </section>
+
+    <section class="room-container" id="suiteRoom">
+        <img src="suite-room.jpg" alt="Suite Image">
+        <div class="details">
+            <h2>Suite</h2>
+            <button onclick="checkAvailability('suite')">Check Availability</button>
+            <p class="availabilityResult" id="availabilityResultSuite"></p>
+            <p class="room-price" id="roomPriceSuite">Select room type to see the price.</p>
+        </div>
+    </section>
+
+    <footer>
+        <button type="submit">Reserve Now</button>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
