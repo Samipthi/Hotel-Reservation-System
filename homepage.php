@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (isset($_SESSION["user"])) {
+   header("Location: login.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +28,7 @@
                 <span class="navbar-text"><span>Contact</span></span>
             </div>
             <div class="navbar-btn">
-                <span class="navbar-text"><a href="login/login.php">Login</a></span>
+                <span class="navbar-text"><a href="login.php">Login</a></span>
             </div>
         </div>
     </div>
