@@ -23,7 +23,7 @@ if (isset($_SESSION["user"])) {
             <div class="navbar-links">
                 <span class="navbar-text"><span>Home</span></span>
                 <span class="navbar-text"><span>Explore</span></span>
-                <span class="navbar-text"><span>Rooms<a href="login.php"></span></span>
+                <span class="navbar-text"><span>Rooms</span></span>
                 <span class="navbar-text"><span>About</span></span>
                 <span class="navbar-text"><span>Contact</span></span>
             </div>
