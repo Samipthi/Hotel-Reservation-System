@@ -1,10 +1,5 @@
 <!-- initalization of the session-->
-<?php
-session_start();
-if (isset($_SESSION["user"])) {
-   header("Location: index.php");
-}
-?>
+
 <!-- login and registration page-->
 <!DOCTYPE html>
 
@@ -25,36 +20,13 @@ if (isset($_SESSION["user"])) {
 
  <body class="bd">
  <div class="container">
-        <?php
-        if (isset($_POST["submit"])) {
-           $username = $_POST["username"];
-           $password = $_POST["password"];
-         require_once("database.php");
-
-            $sql = "SELECT * FROM user WHERE username = '$username'";
-            $result = mysqli_query($conn, $sql);
-            $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
-            if ($user) {
-                if (password_verify($password, $user["password"])) {
-                    session_start();
-                    $_SESSION["user"] = "yes";
-                    header("Location: index.php");
-                    die();
-                }else{
-                    echo "<div class='alert alert-danger'>Password does not match</div>";
-                }
-            }else{
-                echo "<div class='alert alert-danger'>Username does not match</div>";
-            }
-        }
-        ?>
-
+      
 <div class="wrapper"> <!-- wrappers both login and registration together-->
    <!--login-->
      <div class="form-wrapper login">   
     <form action="login.php" method="post">
     
-    <h1>Login</h1>
+    <h1>Book Now!</h1>
     
     <div class="input-box">
     <input type="text" placeholder="Username" class="form-control" name="username" required>   

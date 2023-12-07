@@ -18,7 +18,7 @@ if (!isset($_SESSION["user"])) {
     <div class="navbar-container">
         <div class="navbar-navbar">
             <div class="navbar-logo">
-                <img src="pics\logo.png" alt="Logo">
+                <img src="logo.png" alt="Logo">
             </div>
             <div class="navbar-links">
                 <span class="navbar-text"><span>Home</span></span>

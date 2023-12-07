@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+   
 }
 
 body {
@@ -12,10 +13,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('room.jpg') no-repeat;
+    background-image: url('room.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     font-family: "Poppins", sans-serif;
+    background-color: brown;
+    
 }
 
 .wrapper {

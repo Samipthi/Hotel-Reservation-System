@@ -88,8 +88,8 @@ body {
 }
 
 header {
-    background: url('pics/room.jpg') center/cover no-repeat;
-    color: #fff;
+    background: url('room.jpg') center/cover no-repeat;
+    color: white;
     text-align: center;
     padding: 80px 0;
 }
