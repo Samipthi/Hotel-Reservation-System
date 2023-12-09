@@ -100,10 +100,10 @@ session_start();
   <!-- == Emp Login == -->
   <?php              
                     if (isset($_POST['Emp_login_submit'])) {
-                        $Email = $_POST['Emp_Email'];
-                        $Password = $_POST['Emp_Password'];
+                        $Emp_Email = $_POST['Emp_Email'];
+                        $Emp_Password = $_POST['Emp_Password'];
 
-                        $sql = "SELECT * FROM emp_login WHERE Emp_Email = '$Email' AND Emp_Password = BINARY'$Password'";
+                        $sql = "SELECT * FROM emp_login WHERE Emp_Email = '$Emp_Email' AND Emp_Password = BINARY'$Emp_Password'";
                         $result = mysqli_query($conn, $sql);
 
                         if ($result->num_rows > 0) {
@@ -124,12 +124,12 @@ session_start();
     <form action="" method="POST" class="employee_login authsection" id="employeelogin">
    
     <div class="input-box">
-    <input type="email" class="form-control" name="email" placeholder="Email" required>
+    <input type="email" class="form-control" name="Emp_Email" placeholder="Email" required>
     <i class='bx bx-envelope'></i>
     </div>
     
     <div class="input-box">
-    <input type="password" class="form-control" name="password" placeholder="Password" required>
+    <input type="password" class="form-control" name="Emp_Password" placeholder="Password" required>
     <i class='bx bx-lock-alt'></i>
    </div>
 
