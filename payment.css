@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100vw;
+    min-height: 100vh;
+    background: #34495e;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    max-width: 800px;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.5rem; /* Increased padding for better spacing */
+}
+
+.left,
+.right {
+    width: 48%; /* Adjusted width for better alignment */
+}
+
+form {
+    padding: 1rem;
+}
+
+h3 {
+    margin-top: 1rem;
+    color: #2c3e50;
+}
+
+form input[type="text"],
+form select,
+#zip select,
+#zip input[type="number"],
+#roomType {
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    margin: 0.5rem 0;
+    outline: none;
+}
+
+#roomType {
+    margin-bottom: 1rem; /* Added margin for better spacing */
+}
+
+#zip {
+    display: flex;
+    flex-wrap: wrap; /* Wrapped elements for better responsiveness */
+    margin-top: 0.5rem;
+}
+
+#zip select,
+#zip input[type="number"] {
+    width: calc(50% - 5px); /* Adjusted width for better alignment and spacing */
+    margin-right: 5px; /* Added margin for better spacing */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 0.7rem 1.5rem;
+    background: #34495e;
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #2c3e50;
+}
+
+@media only screen and (max-width: 770px) {
+    .container {
+        flex-direction: column;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
