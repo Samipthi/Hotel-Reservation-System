@@ -6,13 +6,12 @@ if (!isset($_SESSION["user"])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="home-page.css">
-    <title>User Dashboard</title>
+    <title>Hotel Room Booking</title>
 </head>
 
 <body>
@@ -24,12 +23,12 @@ if (!isset($_SESSION["user"])) {
             <div class="navbar-links">
                 <span class="navbar-text"><span>Home</span></span>
                 <span class="navbar-text"><span>Explore</span></span>
-                <span class="navbar-text"><span><a href="rooms/rooms.html">Rooms</a></span></span>
+                <span class="navbar-text"><span><a href="r.html">Rooms</a></span></span>
                 <span class="navbar-text"><span>About</span></span>
                 <span class="navbar-text"><span>Contact</span></span>
             </div>
             <div class="navbar-btn">
-                <span class="navbar-text" ><a href="logot.php" >Logout</a></span>
+                <span class="navbar-text"><a href="logot.php">Logout</a></span>
             </div>
         </div>
     </div>
@@ -51,5 +50,3 @@ if (!isset($_SESSION["user"])) {
 </body>
 
 </html>
-        
-   
