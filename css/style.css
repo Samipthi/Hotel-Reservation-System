@@ -382,73 +382,210 @@ input {
 
 /*--------------wrapper--------*/
 /*--------------room--------*/
-.flex1 {
-  display: flex;
-  justify-content: space-between;
+.room {
+  margin-bottom: 50px;
+  position: relative;
 }
 
-.room .grid {
-  grid-template-columns: repeat(3, 1fr);
+.room.wrapper2::after {
+  display: none;
+  top: 105%;
+  background-image: url("../image1/line2.png");
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
 }
 
 .room img {
   width: 100%;
   height: 100%;
-}
-
-.room .box {
-  box-shadow: 0 13px 43px 0 rgb(37 46 89/10%);
-}
-
-.room .text {
-  padding: 20px;
+  margin-left: 20px;
 }
 
 .room h3 {
-  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+/*------------room------------*/
+
+/*------------offer------------*/
+.offer img {
+  width: 100%;
+  height: 100%;
+}
+
+.offer .right {
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+}
+
+.offer .content h4 {
+  font-size: 20px;
+  color: #627795;
+  font-family: serif;
+}
+
+.offer .rate i {
+  font-size: 13px;
+  color: #CC8C18;
+  margin: 10px 10px 20px 0;
+}
+
+.offer .content h5 {
+  color: #627795;
   margin-bottom: 10px;
 }
 
-.room p span {
-  font-size: 12px;
-  color: grey;
+.offer .box {
+  transition: 0.5s;
 }
 
-.room p {
-  font-size: 20px;
+.offer .box:hover {
+  transform: translateY(-10px);
 }
 
-/*--------------room--------*/
-/*--------------wrapper2--------*/
-.wrapper2 {
-  background-image: url("../image/w1.jpg");
+/*------------offer------------*/
+/*------------area------------*/
+.area img {
+  margin: 0px 0 20px 80px;
 }
 
-.wrapper2 .text {
-  left: 10%;
+.area ul li {
+  display: inline-block;
+  font-weight: 500;
+  color: #5c646e;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
-.wrapper2 h5,
-.wrapper2 h2 {
+.area .left {
+  position: relative;
+}
+
+.area .left::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 85%;
+  height: 92%;
+  margin: 30px;
+  background: #CC8C18;
+  z-index: -1;
+}
+
+/*------------area------------*/
+/*------------offer2------------*/
+.offer2 .heading {
+  padding-top: 10%;
+  text-align: center;
+}
+
+.offer2 .heading h3 {
   color: white;
 }
 
-.wrapper2 img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 20px;
+.offer2.wrapper {
+  background-image: url("../image/w3.jpg");
+  height: 90vh;
+  background-attachment: scroll;
 }
 
-.wrapper2 .para h5 {
+.offer2.timer {
+  padding-top: 0%;
+}
+
+.offer2.wrapper .container {
+  max-width: 85%;
+  margin: auto;
+}
+
+.offer2 .box {
+  background: white;
+  padding: 30px;
+  text-align: left;
+  transition: 0.5s;
+}
+
+.offer2 .box:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.offer2 .box h5 {
+  color: #CC8C18;
+  text-align: left;
+  font-weight: 400;
+  list-style: 5px;
+  word-spacing: 10px;
+}
+
+.offer2 .box h3 {
+  font-size: 20px;
+  margin: 10px 0 10px 0;
+}
+
+.offer2 label {
+  color: #CC8C18;
+}
+
+.offer2 .grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.offer2 .flex i {
+  margin: 0 20px 20px 0;
+  font-weight: 400;
+  color: #5c646e;
+}
+
+/*------------offer2------------*/
+/*------------customer------------*/
+.customer .mtop {
+  padding: 30px;
+  max-width: 60%;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+}
+
+.customer i {
+  color: #CC8C18;
   font-size: 13px;
-  font-weight: 300;
-  margin-top: 5px;
 }
 
-.wrapper2 .para {
-  margin-left: 10%;
+.customer .item h3 {
+  font-size: 20px;
 }
+
+.customer img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.customer .admin {
+  justify-content: center;
+}
+
+.customer .admin h3 {
+  margin: 0;
+}
+
+.customer .text {
+  margin: 10px;
+}
+
+.customer span {
+  opacity: 0.7;
+}
+/*--------------room--------*/
+/*--------------wrapper2--------*/
 
 /*--------------wrapper2--------*/
 /*--------------restaurant--------*/
