@@ -45,7 +45,7 @@ if($usermail == true){
           <li> <a href="#restaurant" class="nav-link">Restaurant</a> </li>
           <li> <a href="#gallery" class="nav-link">Gallery</a> </li>
           <li> <a href="#contact" class="nav-link">Contact</a> </li>
-          <li> <a href="login.php" class="nav-link">Login</a> </li>
+          <li> <a href="logout.php" class="nav-link">Logout</a> </li>
         </ul>
 
         <div class="hambuger">
