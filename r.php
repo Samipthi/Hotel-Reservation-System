@@ -9,6 +9,9 @@
 <body>
 
 <header class="header">
+    <div class="navbar-container">
+        <div class="navbar-navbar">
+            <div class="navbar-logo">
     <div class="logo">
         <img src="logo.png" alt="Logo">
     </div>
@@ -22,6 +25,9 @@
             <li><a href="login.php">Login</a></li>
         </ul>
     </nav>
+    </div>
+    </div>
+    </div>
 </header>
 
 <main class="container">
@@ -64,7 +70,7 @@
 </main>
 
     <footer>
-        <button type="submit">Reserve Now</button>
+        <button type="submit"><a href="booking.php">Reserve Now</a></button>
     </footer>
 </div>
 
