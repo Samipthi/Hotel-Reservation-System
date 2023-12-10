@@ -1,10 +1,25 @@
+<?php
+
+include 'config.php';
+session_start();
+
+// page redirect
+$usermail="";
+$usermail=$_SESSION['usermail'];
+if($usermail == true){
+
+}else{
+  header("location: index.php");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Payment</title>
-    <link rel="stylesheet" type="text/css" href="payment.css">
+    <link rel="stylesheet" type="text/css" href="css/payment.css">
     <!-- Include jspdf library -->
     
 </head>
@@ -15,33 +30,12 @@
                 <h3>BILLING ADDRESS</h3>
                 <form>
                     Full name
-                    <input type="text" name="fullName" placeholder="Enter name">
+                    <input type="text" name="username" placeholder="Enter name">
                     Email
                     <input type="text" name="email" placeholder="Enter email">
 
-                    Address
-                    <input type="text" name="address" placeholder="Enter address">
-                    
-                    City
-                    <input type="text" name="city" placeholder="Enter City">
-                    <div id="zip">
-                        <label>
-                            State
-                            <select name="state">
-                                <option>Choose State..</option>
-                                <option>Rajasthan</option>
-                                <option>Haryana</option>
-                                <option>Karnataka</option>
-                                <option>Madhya Pradesh</option>
-                            </select>
-                        </label>
-                        <label>
-                            Zip code
-                            <input type="number" name="zipCode" placeholder="Zip code">
-                        </label>
-                    </div>
-
-                    <!-- New section for room type -->
+                
+                  <!-- New section for room type -->
                     Room Type
                     <select id="roomType" onchange="displayPrice()">
                         <option value="standard">Standard Room</option>
@@ -49,6 +43,12 @@
                         <option value="family">Family Suite</option>
                         <option value="executive">Executive Penthouse</option>
                     </select>
+
+                    Check-InDate
+                    <input type="date" name="check-InDate" placeholder="date">
+                    <br><br>
+                    Check-OutDate
+                    <input type="date" name="check-OutDate" placeholder="date">
                 </form>
             </div>
             <div class="right">

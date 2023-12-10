@@ -109,25 +109,8 @@ if($usermail == true){
   <section class="book">
     <div class="container flex">
       <div class="input grid">
-        <div class="box">
-          <label>Check-in:</label>
-          <input type="date" placeholder="Check-in-Date">
-        </div>
-        <div class="box">
-          <label>Check-out:</label>
-          <input type="date" placeholder="Check-out-Date">
-        </div>
-        <div class="box">
-          <label>Adults:</label> <br>
-          <input type="number" placeholder="0">
-        </div>
-        <div class="box">
-          <label>Children:</label> <br>
-          <input type="number" placeholder="0">
-        </div>
-      </div>
       <div class="search">
-        <input type="submit" value="SEARCH">
+      <a href="payment.php" class="nav-link"> <input type="submit" value="BOOK NOW!"></a>
       </div>
     </div>
   </section>

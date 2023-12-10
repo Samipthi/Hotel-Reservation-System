@@ -107,9 +107,9 @@ session_start();
                         $result = mysqli_query($conn, $sql);
 
                         if ($result->num_rows > 0) {
-                            $_SESSION['usermail']=$Email;
-                            $Email = "";
-                            $Password = "";
+                            $_SESSION['usermail']=$Emp_Email;
+                            $Emp_Email = "";
+                            $Emp_Password = "";
                             header("Location: admin/admin.php");
                         } else {
                             echo "<script>swal({
