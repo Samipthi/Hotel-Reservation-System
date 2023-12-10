@@ -247,10 +247,6 @@ if($usermail == true){
             </div>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <h5>From $50.6/night</h5>
-            <button class="flex1">
-              <span>Check Availability</span>
-              <i class="fas fa-arrow-circle-right"></i>
-            </button>
           </div>
         </div>
         <div class="box flex">
@@ -268,10 +264,6 @@ if($usermail == true){
             </div>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <h5>From $50.6/night</h5>
-            <button class="flex1">
-              <span>Check Availability</span>
-              <i class="fas fa-arrow-circle-right"></i>
-            </button>
           </div>
         </div>
         <div class="box flex">
@@ -289,10 +281,6 @@ if($usermail == true){
             </div>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <h5>From $50.6/night</h5>
-            <button class="flex1">
-              <span>Check Availability</span>
-              <i class="fas fa-arrow-circle-right"></i>
-            </button>
           </div>
         </div>
         <div class="box flex">
@@ -310,10 +298,6 @@ if($usermail == true){
             </div>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <h5>From $50.6/night</h5>
-            <button class="flex1">
-              <span>Check Availability</span>
-              <i class="fas fa-arrow-circle-right"></i>
-            </button>
           </div>
         </div>
       </div>
