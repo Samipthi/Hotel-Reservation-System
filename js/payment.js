@@ -1,10 +1,21 @@
 // payment.js
 
 function displayPrice() {
-    var roomType = document.getElementById("roomType").value;
+    // Get all radio buttons with name 'roomType'
+    var roomTypeRadios = document.getElementsByName("roomType");
+    var selectedRoomType = "";
+
+    // Loop through the radio buttons to find the selected one
+    for (var i = 0; i < roomTypeRadios.length; i++) {
+        if (roomTypeRadios[i].checked) {
+            selectedRoomType = roomTypeRadios[i].value;
+            break; // Exit the loop if a radio button is checked
+        }
+    }
+
     var priceDisplay = document.getElementById("priceDisplay");
 
-    switch (roomType) {
+    switch (selectedRoomType) {
         case "Standard Room":
             priceDisplay.innerText = "Price: $99 per night";
             break;
