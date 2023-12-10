@@ -13,7 +13,6 @@ if($usermail == true){
 }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -46,7 +45,7 @@ if($usermail == true){
           <li> <a href="#restaurant" class="nav-link">Restaurant</a> </li>
           <li> <a href="#gallery" class="nav-link">Gallery</a> </li>
           <li> <a href="#contact" class="nav-link">Contact</a> </li>
-          <li> <a href="login.php" class="nav-link">Login</a> </li>
+          <li> <a href="logout.php" class="nav-link">Logout</a> </li>
         </ul>
 
         <div class="hambuger">
@@ -107,18 +106,31 @@ if($usermail == true){
       line.style.background = change;
     }
   </script>
-
   <section class="book">
     <div class="container flex">
       <div class="input grid">
-       
+        <div class="box">
+          <label>Check-in:</label>
+          <input type="date" placeholder="Check-in-Date">
+        </div>
+        <div class="box">
+          <label>Check-out:</label>
+          <input type="date" placeholder="Check-out-Date">
+        </div>
+        <div class="box">
+          <label>Adults:</label> <br>
+          <input type="number" placeholder="0">
+        </div>
+        <div class="box">
+          <label>Children:</label> <br>
+          <input type="number" placeholder="0">
+        </div>
+      </div>
       <div class="search">
-        <input type="submit" value="Book Now!" name="">
+        <input type="submit" value="SEARCH">
       </div>
     </div>
-    </div>
   </section>
-
   <section class="about top" id="about">
     <div class="container flex">
       <div class="left">
@@ -242,7 +254,7 @@ if($usermail == true){
             <img src="image1/o1.jpg" alt="">
           </div>
           <div class="right">
-            <h4>Standard Room</h4>
+            <h4>Deluxe Room</h4>
             <div class="rate flex">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -250,8 +262,8 @@ if($usermail == true){
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <p> Our Standard Room offers a comfortable and cozy space for travelers on a budget.</p>
-            <h5>Price: $99 per night</h5>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h5>From $50.6/night</h5>
             <button class="flex1">
               <span>Check Availability</span>
               <i class="fas fa-arrow-circle-right"></i>
@@ -271,8 +283,8 @@ if($usermail == true){
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <p> Indulge in luxury with our Deluxe Suite, featuring spacious accommodations and modern furnishings.</p>
-            <h5>Price: $199 per night</h5>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h5>From $50.6/night</h5>
             <button class="flex1">
               <span>Check Availability</span>
               <i class="fas fa-arrow-circle-right"></i>
@@ -284,7 +296,7 @@ if($usermail == true){
             <img src="image1/o3.jpg" alt="">
           </div>
           <div class="right">
-            <h4>Family Suite</h4>
+            <h4>Deluxe Room</h4>
             <div class="rate flex">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -292,8 +304,8 @@ if($usermail == true){
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <p> The Family Suite is designed to accommodate larger groups or families, offering interconnected rooms for added privacy</p>
-            <h5>Price: $249 per night (up to 4 guests)</h5>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h5>From $50.6/night</h5>
             <button class="flex1">
               <span>Check Availability</span>
               <i class="fas fa-arrow-circle-right"></i>
@@ -305,7 +317,7 @@ if($usermail == true){
             <img src="image1/o4.jpg" alt="">
           </div>
           <div class="right">
-            <h4>Executive Penthouse</h4>
+            <h4>Deluxe Room</h4>
             <div class="rate flex">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -313,8 +325,8 @@ if($usermail == true){
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <p>  Elevate your stay with our Executive Penthouse, situated on the top floor with panoramic views of the city.</p>
-            <h5>Price: $399 per night</h5>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h5>From $50.6/night</h5>
             <button class="flex1">
               <span>Check Availability</span>
               <i class="fas fa-arrow-circle-right"></i>

@@ -225,13 +225,11 @@ button {
 .book .input {
   background: #242e5a;
   padding: 20px 20px 40px 20px;
-  width: auto;
 }
 
 .book .search {
   background: #3f9cc1;
   padding: 20px;
-  width:auto
 }
 
 input {
@@ -249,7 +247,7 @@ input {
 }
 
 .book .search {
-  width: auto;
+  width: 20%;
 }
 
 .book .search input {
@@ -258,7 +256,6 @@ input {
   font-weight: bold;
   font-size: 20px;
   margin-top: 40px;
-  width: auto;
 }
 
 /*--------------book--------*/
