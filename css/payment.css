@@ -28,6 +28,7 @@ header {
 .left,
 .right {
     width: 48%; /* Adjusted width for better alignment */
+    position:flex;
 }
 
 form {

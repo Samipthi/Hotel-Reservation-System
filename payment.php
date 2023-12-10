@@ -20,9 +20,29 @@ if($usermail == true){
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Payment</title>
     <link rel="stylesheet" type="text/css" href="css/payment.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- aos animation -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<!-- loading bar -->
+<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+<link rel="stylesheet" href="./css/flash.css">
     <!-- Include jspdf library -->
     
 </head>
+<?php
+    if(isset($_POST['payment']))
+    {
+        $username = $_POST["username"];
+        $email = $_POST["email"];
+        $roomtype= $_POST["roomType"];
+        $checkin = $_POST["check-InDate"] ;
+        $checkout = $_POST["check-OutDate"];
+        $mode = $_POST["mode"];
+
+       
+    
+    }
+    ?>
 <body>
     <header>
         <div class="container">
@@ -38,25 +58,22 @@ if($usermail == true){
                   <!-- New section for room type -->
                     Room Type
                     <select id="roomType" onchange="displayPrice()">
-                        <option value="standard">Standard Room</option>
-                        <option value="deluxe">Deluxe Suite</option>
-                        <option value="family">Family Suite</option>
-                        <option value="executive">Executive Penthouse</option>
+                        <option value="Standard Room">Standard Room</option>
+                        <option value="Deluxe Suite">Deluxe Suite</option>
+                        <option value="Family Suite">Family Suite</option>
+                        <option value="Executive Penthouse">Executive Penthouse</option>
                     </select>
 
                     Check-InDate
                     <input type="date" name="check-InDate" placeholder="date">
                     <br><br>
                     Check-OutDate
-                    <input type="date" name="check-OutDate" placeholder="date">
-<br>
+                    <input type="date" name="check-OutDate" placeholder="date"><br>
                     
-
-                </form>
-            </div>
+                
             <div class="right">
                 <h3>PAYMENT</h3>
-                <form>
+                
                     Accepted Card <br>
                     <img src="image/card1.png" width="100">
                     <img src="image/card2.png" width="50">
@@ -68,12 +85,20 @@ if($usermail == true){
                     <div id="priceDisplay">
                         Price: $99 per night <!-- Default price for Standard Room -->
                     </div>
+                    <input type="submit" name="payment" value="payment" id="checkoutBtn">
                 </form>
-                <input type="submit" name="" value="Proceed to Checkout" id="checkoutBtn">
+               
             </div>
         </div>
+</div>
     </header>
+    <!-- php code -->
+  
+
+
+
     <!-- Include your payment.js after jspdf -->
+    <script src="./js/payment.js"></script>
 	
 </body>
 </html>

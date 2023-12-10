@@ -5,16 +5,16 @@ function displayPrice() {
     var priceDisplay = document.getElementById("priceDisplay");
 
     switch (roomType) {
-        case "standard":
+        case "Standard Room":
             priceDisplay.innerText = "Price: $99 per night";
             break;
-        case "deluxe":
+        case "Deluxe Suite":
             priceDisplay.innerText = "Price: $199 per night";
             break;
-        case "family":
+        case "Family Suite":
             priceDisplay.innerText = "Price: $249 per night";
             break;
-        case "executive":
+        case "Executive Penthouse":
             priceDisplay.innerText = "Price: $399 per night";
             break;
         default:
