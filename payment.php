@@ -49,6 +49,9 @@ if($usermail == true){
                     <br><br>
                     Check-OutDate
                     <input type="date" name="check-OutDate" placeholder="date">
+<br>
+                    
+
                 </form>
             </div>
             <div class="right">
@@ -59,28 +62,8 @@ if($usermail == true){
                     <img src="image/card2.png" width="50">
                     <br><br>
 
-                    Credit card number
-                    <input type="text" name="cardNumber" placeholder="Enter card number">
-                    
-                    Exp month
-                    <input type="text" name="expMonth" placeholder="Enter Month">
-                    <div id="zip">
-                        <label>
-                            Exp year
-                            <select name="expYear">
-                                <option>Choose Year..</option>
-                                <option>2022</option>
-                                <option>2023</option>
-                                <option>2024</option>
-                                <option>2025</option>
-                            </select>
-                        </label>
-                        <label>
-                            CVV
-                            <input type="number" name="cvv" placeholder="CVV">
-                        </label>
-                    </div>
-
+                    Mode(gpay,card)
+                    <input type="text" name="mode" placeholder="Enter mode">
                     <!-- Display the price dynamically based on the selected room type -->
                     <div id="priceDisplay">
                         Price: $99 per night <!-- Default price for Standard Room -->
