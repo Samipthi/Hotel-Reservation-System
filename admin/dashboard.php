@@ -61,7 +61,7 @@
    <div class="databox">
         <div class="box roombookbox">
           <h2>Total Booked Room</h1>  
-          <h1><?php echo $roombookrow ?> / <?php echo $roomrow ?></h1>
+          <h1><?php echo $roombookrow ?>
         </div>
         <div class="box guestbox">
         <h2>Total Staff</h1>  
