@@ -1,3 +1,44 @@
+
+<?php
+    session_start();
+    include '../config.php';
+
+    // roombook
+    $roombooksql ="Select * from booking";
+    $roombookre = mysqli_query($conn, $roombooksql);
+    $roombookrow = mysqli_num_rows($roombookre);
+
+    // staff
+    $staffsql ="Select * from staff";
+    $staffre = mysqli_query($conn, $staffsql);
+    $staffrow = mysqli_num_rows($staffre);
+
+    // room
+    $roomsql ="Select * from room";
+    $roomre = mysqli_query($conn, $roomsql);
+    $roomrow = mysqli_num_rows($roomre);
+
+    //roombook roomtype
+    $chartroom1 = "SELECT * FROM booking b, room r, user u
+                   where  b.room_no = r.room_no and b.user_id = u.id and room_type='Standard Room'";
+    $chartroom1re = mysqli_query($conn, $chartroom1);
+    $chartroom1row = mysqli_num_rows($chartroom1re);
+
+    $chartroom2 = "SELECT * FROM booking b, room r, user u
+    where  b.room_no = r.room_no and b.user_id = u.id and room_type='Deluxe Room'";
+    $chartroom2re = mysqli_query($conn, $chartroom2);
+    $chartroom2row = mysqli_num_rows($chartroom2re);
+
+    $chartroom3 = "SELECT * FROM booking b, room r, user u
+    where  b.room_no = r.room_no and b.user_id = u.id and room_type='Family Suite'";
+    $chartroom3re = mysqli_query($conn, $chartroom3);
+    $chartroom3row = mysqli_num_rows($chartroom3re);
+
+    $chartroom4 = "SELECT * FROM booking b, room r, user u
+    where  b.room_no = r.room_no and b.user_id = u.id and room_type='Executive Penthouse'";
+    $chartroom4re = mysqli_query($conn, $chartroom4);
+    $chartroom4row = mysqli_num_rows($chartroom4re);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,10 +88,10 @@
 
 <script>
         const labels = [
-          'Superior Room',
+          'Standard  Room',
           'Deluxe Room',
-          'Guest House',
-          'Single Room',
+          'Family Suite',
+          'Executive Penthouse',
         ];
       
         const data = {
