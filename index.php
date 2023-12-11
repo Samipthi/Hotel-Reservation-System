@@ -125,25 +125,22 @@ session_start();
    
     <div class="input-box">
     <input type="email" class="form-control" name="Emp_Email" placeholder="Email" required>
-    <i class='bx bx-envelope'></i>
+    
     </div>
     
     <div class="input-box">
     <input type="password" class="form-control" name="Emp_Password" placeholder="Password" required>
-    <i class='bx bx-lock-alt'></i>
+    
    </div>
 
-<div class="remember-forgot">
-<label><input type="checkbox"> Remember me</label>
-<a href="#">Forgot password?</a>
-</div>
+
 
 <button type="submit" class="auth_btn" name="Emp_login_submit" value="Register" >Login</button>
   
  </form>             
 </div>
 
-</div>
+
 <!--============ signup =============-->
 
 
@@ -229,6 +226,7 @@ if (isset($_POST['user_signup_submit'])) {
                         <h6>Already have an account? <span class="page_move_btn" onclick="loginpage()">Log in</span></h6>
                     </div>
                 </form>
+            </div>
             </div>
     </section>
 </body>

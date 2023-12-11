@@ -9,9 +9,7 @@
     $roombookrow = mysqli_num_rows($roombookre);
 
     // staff
-    $staffsql ="Select * from staff";
-    $staffre = mysqli_query($conn, $staffsql);
-    $staffrow = mysqli_num_rows($staffre);
+    
 
     // room
     $roomsql ="Select * from room";
@@ -63,10 +61,7 @@
           <h2>Total Booked Room</h1>  
           <h1><?php echo $roombookrow ?>
         </div>
-        <div class="box guestbox">
-        <h2>Total Staff</h1>  
-          <h1><?php echo $staffrow ?></h1>
-        </div>
+        
            </div>
     <div class="chartbox">
         <div class="bookroomchart">

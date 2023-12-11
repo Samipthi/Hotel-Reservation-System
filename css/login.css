@@ -178,6 +178,7 @@ section {
     display: none;
     flex-direction: column;
     align-items: center;
+    position: flex;
 }
 
 .user_signup{
