@@ -237,7 +237,7 @@ if($usermail == true){
             <img src="image1/o1.jpg" alt="">
           </div>
           <div class="right">
-            <h4>Deluxe Room</h4>
+            <h4>Standard Room</h4>
             <div class="rate flex">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -245,8 +245,8 @@ if($usermail == true){
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <h5>From $50.6/night</h5>
+            <p> Our Standard Room offers a comfortable and cozy space for travelers on a budget.</p>
+            <h5>Price: $99 per night</h5>
           </div>
         </div>
         <div class="box flex">
@@ -254,7 +254,7 @@ if($usermail == true){
             <img src="image1/o2.jpg" alt="">
           </div>
           <div class="right">
-            <h4>Deluxe Room</h4>
+            <h4>Deluxe Suite</h4>
             <div class="rate flex">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -262,8 +262,8 @@ if($usermail == true){
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <h5>From $50.6/night</h5>
+            <p>  Indulge in luxury with our Deluxe Suite, featuring spacious accommodations and modern furnishings. </p>
+            <h5>Price: $199 per night</h5>
           </div>
         </div>
         <div class="box flex">
@@ -271,7 +271,7 @@ if($usermail == true){
             <img src="image1/o3.jpg" alt="">
           </div>
           <div class="right">
-            <h4>Deluxe Room</h4>
+            <h4>Family Suite</h4>
             <div class="rate flex">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -279,8 +279,8 @@ if($usermail == true){
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <h5>From $50.6/night</h5>
+            <p> The Family Suite is designed to accommodate larger groups or families, offering interconnected rooms for added privacy.</p>
+            <h5>Price: $249 per night (up to 4 guests)</h5>
           </div>
         </div>
         <div class="box flex">
@@ -288,7 +288,7 @@ if($usermail == true){
             <img src="image1/o4.jpg" alt="">
           </div>
           <div class="right">
-            <h4>Deluxe Room</h4>
+            <h4>Executive Penthouse</h4>
             <div class="rate flex">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -296,8 +296,8 @@ if($usermail == true){
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <h5>From $50.6/night</h5>
+            <p>Elevate your stay with our Executive Penthouse, situated on the top floor with panoramic views of the city.</p>
+            <h5>Price: $399 per night</h5>
           </div>
         </div>
       </div>
