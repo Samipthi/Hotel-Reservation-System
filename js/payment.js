@@ -19,7 +19,7 @@ function displayPrice() {
         case "Standard Room":
             priceDisplay.innerText = "Price: $99 per night";
             break;
-        case "Deluxe Suite":
+        case "Deluxe Room":
             priceDisplay.innerText = "Price: $199 per night";
             break;
         case "Family Suite":

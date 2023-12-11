@@ -50,12 +50,13 @@ if($usermail == true){
                $userId = $userRow['id'];
    
                // Step 2: Fetch room number based on room type
-               $roomQuery = "SELECT room_no FROM room WHERE room_type = '$roomtype'";
+               $roomQuery = "SELECT room_no,price FROM room WHERE room_type = '$roomtype'";
                $roomResult = mysqli_query($conn, $roomQuery);
-   
-               if ($roomResult && $roomResult->num_rows > 0) {
+                
+               if ($roomResult->num_rows > 0) {
                    $roomRow = $roomResult->fetch_assoc();
                    $roomNo = $roomRow['room_no'];
+                   $price = $roomRow['price'];
    
                    // Step 3: Insert data into the booking table
                    $bookingQuery = "INSERT INTO booking (check_InDate, check_OutDate, user_id, room_no) VALUES ('$checkin', '$checkout', '$userId', '$roomNo')";
@@ -65,11 +66,12 @@ if($usermail == true){
                        $bookingId = mysqli_insert_id($conn);
    
                        // Step 4: Insert data into the payment table
-                       $paymentQuery = "INSERT INTO payment (pay_Method, pay_Date, amount, booking_id) VALUES ('$mode', NOW(), '100', '$bookingId')";
+                       $paymentQuery = "INSERT INTO payment (pay_Method, pay_Date, amount,user_id, booking_id) VALUES ('$mode', NOW(), '$price','$userId', '$bookingId')";
                        $paymentResult = mysqli_query($conn, $paymentQuery);
    
                        if ($paymentResult) {
                            echo "Booking and payment records inserted successfully.";
+                           header("Location: home.php");
                        } else {
                            echo "Error inserting payment record: " . mysqli_error($conn);
                        }
@@ -107,7 +109,7 @@ if($usermail == true){
                     </label>
 <br>
                     <label>
-                        <input type="radio" name="roomType" value="Deluxe Suite" onchange="displayPrice()"> Deluxe Suite
+                        <input type="radio" name="roomType" value="Deluxe Room" onchange="displayPrice()"> Deluxe Room
                     </label>
 
 <br>                    <label>
@@ -140,6 +142,7 @@ if($usermail == true){
                      <div id="priceDisplay">Price: $99 per night</div> <!-- Default price for Standard Room -->
                    
                     <input type="submit" name="payment" value="payment" id="checkoutBtn">
+    
                 </form>
                
             </div>

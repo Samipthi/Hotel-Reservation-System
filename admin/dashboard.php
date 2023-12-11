@@ -67,20 +67,13 @@
         <h2>Total Staff</h1>  
           <h1><?php echo $staffrow ?></h1>
         </div>
-        <div class="box profitbox">
-        <h2>Profit</h1>  
-          <h1><?php echo $tot?> <span>&#8377</span></h1>
-        </div>
-    </div>
+           </div>
     <div class="chartbox">
         <div class="bookroomchart">
             <canvas id="bookroomchart"></canvas>
             <h3 style="text-align: center;margin:10px 0;">Booked Room</h3>
         </div>
-        <div class="profitchart" >
-            <div id="profitchart"></div>
-            <h3 style="text-align: center;margin:10px 0;">Profit</h3>
-        </div>
+      
     </div>
 </body>
 
