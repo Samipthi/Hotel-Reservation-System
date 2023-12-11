@@ -55,7 +55,7 @@
             while ($res = mysqli_fetch_array($paymantresult)) {
             ?>
                 <tr>
-                    <td><?php echo $res['user_id'] ?></td>
+                    <td><?php echo $res['payment_id'] ?></td>
                     <td><?php echo $res['username'] ?></td>
                     <td><?php echo $res['check_InDate'] ?></td>
                     <td><?php echo $res['check_OutDate'] ?></td>
@@ -65,8 +65,7 @@
 					<td><?php echo $res['amount'] ?></td>
                     
                     <td class="action">
-                        <a href="invoiceprint.php?id= <?php echo $res['id']?>"><button class="btn btn-primary"><i class="fa-solid fa-print"></i>Print</button></a>
-						<a href="paymantdelete.php?id=<?php echo $res['id']?>"><button class="btn btn-danger">Delete</button></a>
+                       	<a href="paymantdelete.php?payment_id=<?php echo $res['payment_id']?>"><button class="btn btn-danger">Delete</button></a>
                     </td>
                 </tr>
             <?php

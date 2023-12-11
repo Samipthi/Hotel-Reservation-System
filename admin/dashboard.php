@@ -4,7 +4,7 @@
     include '../config.php';
 
     // roombook
-    $roombooksql ="Select * from booking";
+    $roombooksql ="Select * from payment";
     $roombookre = mysqli_query($conn, $roombooksql);
     $roombookrow = mysqli_num_rows($roombookre);
 
@@ -19,23 +19,23 @@
     $roomrow = mysqli_num_rows($roomre);
 
     //roombook roomtype
-    $chartroom1 = "SELECT * FROM booking b, room r, user u
-                   where  b.room_no = r.room_no and b.user_id = u.id and room_type='Standard Room'";
+    $chartroom1 = "SELECT * FROM payment p, booking b, room r, user u
+                   where  b.room_no = r.room_no and p.booking_id=b.booking_id and b.user_id = u.id and room_type='Standard Room'";
     $chartroom1re = mysqli_query($conn, $chartroom1);
     $chartroom1row = mysqli_num_rows($chartroom1re);
 
-    $chartroom2 = "SELECT * FROM booking b, room r, user u
-    where  b.room_no = r.room_no and b.user_id = u.id and room_type='Deluxe Room'";
+    $chartroom2 = "SELECT * FROM payment p, booking b, room r, user u
+    where  b.room_no = r.room_no and p.booking_id=b.booking_id and b.user_id = u.id and room_type='Deluxe Room'";
     $chartroom2re = mysqli_query($conn, $chartroom2);
     $chartroom2row = mysqli_num_rows($chartroom2re);
 
-    $chartroom3 = "SELECT * FROM booking b, room r, user u
-    where  b.room_no = r.room_no and b.user_id = u.id and room_type='Family Suite'";
+    $chartroom3 = "SELECT * FROM payment p, booking b, room r, user u
+    where  b.room_no = r.room_no and p.booking_id=b.booking_id and b.user_id = u.id and room_type='Family Suite'";
     $chartroom3re = mysqli_query($conn, $chartroom3);
     $chartroom3row = mysqli_num_rows($chartroom3re);
 
-    $chartroom4 = "SELECT * FROM booking b, room r, user u
-    where  b.room_no = r.room_no and b.user_id = u.id and room_type='Executive Penthouse'";
+    $chartroom4 = "SELECT * FROM payment p, booking b, room r, user u
+    where  b.room_no = r.room_no and p.booking_id=b.booking_id and b.user_id = u.id and room_type='Executive Penthouse'";
     $chartroom4re = mysqli_query($conn, $chartroom4);
     $chartroom4row = mysqli_num_rows($chartroom4re);
 ?>

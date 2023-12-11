@@ -1,7 +1,7 @@
 <?php
 $hostName = "localhost";
 $dbUser = "root";
-$dbPassword = "";
+$dbPassword = "Samipthi7";
 $dbName = "hotel_booking";
 $conn = mysqli_connect($hostName, $dbUser, $dbPassword, $dbName);
 if (!$conn) {

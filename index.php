@@ -52,7 +52,7 @@ session_start();
      
      <div class="role_btn">
                     <div class="btns active">User</div>
-                    <div class="btns">Staff</div>
+                    <div class="btns">Admin</div>
                 </div>
  
     <?php

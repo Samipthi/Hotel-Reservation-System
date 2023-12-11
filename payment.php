@@ -64,9 +64,14 @@ if($usermail == true){
    
                    if ($bookingResult) {
                        $bookingId = mysqli_insert_id($conn);
-   
+                       $checkin = new DateTime($checkin);
+                       $checkout = new DateTime($checkout);
+                       
+                       $interval = $checkin->diff($checkout);
+                       $numberOfDays = $interval->days;
+                       $total= $price*$numberOfDays;
                        // Step 4: Insert data into the payment table
-                       $paymentQuery = "INSERT INTO payment (pay_Method, pay_Date, amount,user_id, booking_id) VALUES ('$mode', NOW(), '$price','$userId', '$bookingId')";
+                       $paymentQuery = "INSERT INTO payment (pay_Method, pay_Date, amount,user_id, booking_id) VALUES ('$mode', NOW(), '$total','$userId', '$bookingId')";
                        $paymentResult = mysqli_query($conn, $paymentQuery);
    
                        if ($paymentResult) {
